@@ -19,13 +19,15 @@
                     <?php $movie = new Movies($value["title"], $value["plot"], $value["genre"], $value["year"], $value["cast"]);?>
                     <h2><?= $movie->title; ?></h2>
                     <h4>Trama :</h4>
-                    <p><?= $movie->plot; ?></p>
+                    <p><?= $movie->setPlot(); ?></p>
+                    <a href="">Read More</a>
                     <h5>Genere :</h5>
                     <p><?= $movie->genre; ?></p>
                     <h5>Anno di pubblicazione :</h5>
                     <p><?= $movie->year; ?></p>
                     <h5>Cast :</h5>
-                    <p><?= $movie->cast; ?></p>
+                    <p><?= $movie->setCast(); ?></p>
+                    <a href="">Read More</a>
                 </div>
             <?php } ?>
             

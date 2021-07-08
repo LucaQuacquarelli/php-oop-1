@@ -13,4 +13,12 @@
             $this->year = $year;
             $this->cast = $cast;
         }
+
+        public function setPlot() {
+            return substr($this->plot, 0, 200) . "...";
+        }
+
+        public function setCast() {
+            return substr($this->cast, 0, 55) . "...";
+        }
     }
